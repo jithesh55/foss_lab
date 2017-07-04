@@ -1,0 +1,143 @@
+PROGRAM: PERL
+
+#!/usr/bin/perl
+
+        print "\n\n**********SIMPLE CALCULATOR*****************";
+       while(true){
+        print "Select an operation
+                  1.Subtraction 2.addition 3.Multiplication 4.Division 5.exit\n";
+        $ch=<>;
+	chomp($ch);
+	if ($ch==1)
+{
+        print "\nWhat is the first number?";
+        $a = <>;
+        chomp($a);
+        print "\nWhat is the second number?";
+        $b = <>;
+        chomp($b);
+        print "\nResult of subtraction : ";
+        $s = $a - $b;
+        print $s;
+	print "\n";
+}
+	elsif($ch==2)
+{
+	print "\nWhat is the first number?";
+        $a = <>;
+        chomp($a);
+        print "\nWhat is the second number?";
+        $b = <>;
+        chomp($b);        
+	
+          print "\nResult of addition: ";
+        $ad = $a + $b;
+        print $ad;
+	print "\n";
+}
+	elsif ($ch==3){
+	print "\nWhat is the first number?";
+        $a = <>;
+        chomp($a);
+        print "\nWhat is the second number?";
+        $b = <>;
+        chomp($b);
+          print "\nResult of multiplication : ";
+        $m = $a * $b;
+        print $m;
+	print "\n";
+}
+	elsif($ch==4){
+	print "\nWhat is the first number?";
+        $a = <>;
+        chomp($a);
+        print "\nWhat is the second number?";
+        $b = <>;
+        chomp($b);
+          print "\nResult of division : ";
+        $d = $a / $b;
+        print $d;
+	print "\n";
+        }
+	elsif($ch==5){
+            exit();
+}
+	else{
+	    print "\nINVALID OPTION\n";
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**********SIMPLE CALCULATOR*****************Select an operation
+                  1.Subtraction 2.addition 3.Multiplication 4.Division 5.exit
+1
+
+What is the first number?4
+
+What is the second number?2
+
+Result of subtraction : 2
+Select an operation
+                  1.Subtraction 2.addition 3.Multiplication 4.Division 5.exit
+2
+
+What is the first number?6
+
+What is the second number?7
+
+Result of addition: 13
+Select an operation
+                  1.Subtraction 2.addition 3.Multiplication 4.Division 5.exit
+3
+
+What is the first number?4
+
+What is the second number?5
+
+Result of multiplication : 20
+Select an operation
+                  1.Subtraction 2.addition 3.Multiplication 4.Division 5.exit
+4
+
+What is the first number?6
+
+What is the second number?2
+
+Result of division : 3
+Select an operation
+                  1.Subtraction 2.addition 3.Multiplication 4.Division 5.exit
+6
+
+INVALID OPTION
+Select an operation
+                  1.Subtraction 2.addition 3.Multiplication 4.Division 5.exit
+5
+user@user-OptiPlex-3020:~/jithesh$ cat me.awk | awk '{print$1,$2,$3}'
+adarsh 45 
+kannan 48 
+jacob 34 
+user@user-OptiPlex-3020:~/jithesh$ awk '{sum+=$2};END {print sum}' me.awk
+127
+
